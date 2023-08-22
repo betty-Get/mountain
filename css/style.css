@@ -1,15 +1,35 @@
 body{
+    
     font-family: 'Times New Roman', Times, serif;
     font: 15px;
     padding: 0;
-    margin: 0;
-   
+    margin: 0;  
+    background: url("../image/rohi.jpg");
+    height: 100vh;
+    background-size: cover; 
+     background-repeat: no-repeat; 
 }
 /* global */
 .container{
-    width: 80%;
+    width: 60%;
     margin: auto;
 
+}
+.child{
+    margin-bottom: 4px;
+}
+.logo{
+    display: none;
+    border: 1px white solid;
+    background-color: aliceblue;
+    padding-top: 10px;
+    width: 40px;
+
+    position: absolute;
+    top: 6px;
+    border-radius: 100%;
+     justify-content: center;
+    align-items: center;
 }
 /* header */
 header{
@@ -21,10 +41,10 @@ header li {
     display: inline;
 }
 header a {
-    /* color: white; */
+    color: white;
     text-decoration: none;
     text-decoration-line: underline;
-    text-decoration-color: aqua;
+    text-decoration-color: white;
 
 }
 header #logo{
@@ -32,8 +52,22 @@ header #logo{
     float: left;
 }
 header nav{
-    float: right;
+    padding: 1px;
+    float: center;
 }
 header a:hover{
     color: black;
 }
+.main-header{
+    margin-top: 100px;
+    font-size: xx-large;
+}
+
+@media screen and (min-width: 600px) {
+   .logo{
+    display: flex;
+   }
+   header nav{
+    float: right;
+}
+  }
