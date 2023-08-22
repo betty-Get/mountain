@@ -24,7 +24,6 @@ body{
     background-color: aliceblue;
     padding-top: 10px;
     width: 40px;
-
     position: absolute;
     top: 6px;
     border-radius: 100%;
@@ -43,8 +42,8 @@ header li {
 header a {
     color: white;
     text-decoration: none;
-    text-decoration-line: underline;
     text-decoration-color: white;
+    padding-bottom: 5px;
 
 }
 header #logo{
@@ -60,7 +59,10 @@ header a:hover{
 }
 .main-header{
     margin-top: 100px;
-    font-size: xx-large;
+    font-size: 40px;
+}
+.sub-header{
+    color:rgb(50, 50, 71);
 }
 
 @media screen and (min-width: 600px) {
@@ -70,4 +72,7 @@ header a:hover{
    header nav{
     float: right;
 }
-  }
+.main-header{
+    font-size: 60px;
+}
+}
