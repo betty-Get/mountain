@@ -2,11 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Mountains | History</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/history.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
   </head>
   <body>
     <header>
@@ -45,9 +46,41 @@
           amet eros bibendum, blandit venenatis enim accumsan. Praesent sem justo, iaculis a sodales sit amet, pulvinar vel mauris.
          </p>
     </div>
-    
-      
+
+    <footer class="footer">
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="./image/rohi.jpg"/></div>
+        <div class="swiper-slide"><img src="./image/rohi.jpg"/></div>
+        <div class="swiper-slide"><img src="./image/rohi.jpg"/></div>
+        <div class="swiper-slide"><img src="./image/rohi.jpg"/></div>
+        <div class="swiper-slide"><img src="./image/rohi.jpg"/></div>
+        <div class="swiper-slide"><img src="./image/rohi.jpg"/></div>
+        <div class="swiper-slide"><img src="./image/rohi.jpg"/></div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div> 
+  </footer>
     </div>
-	<!-- <script src="index.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      let sliderPerViewCount = 3;
+      let width = window.innerWidth;
+
+      if(width <= 600)
+      {
+        sliderPerViewCount = 1;
+      }
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: sliderPerViewCount ,
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
   </body>
 </html>

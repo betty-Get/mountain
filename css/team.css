@@ -6,9 +6,10 @@ body{
      background-size: cover; 
 }
 .container{
-    width: 60%;
-    margin: auto;
-
+    width: 80%;
+    /* margin: auto; */
+    display: flex;
+    justify-content: center;
 }
 section{
     height: 120px;
@@ -25,7 +26,10 @@ header span a{
     color:#435374;
 }
 .container ul{
-    /* display: flex; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     /* width:60px; */
     padding-top: 10px;
     padding-left: 0px;
@@ -38,7 +42,7 @@ header span a{
    color:#677797;
 }
 header{
-    height: 30px;
+    height: 70px;
     width: 100vw;
     background-color:  #404F6C;
 }
@@ -104,5 +108,21 @@ header a{
 @media screen and (min-width: 600px) {
     .navbar_left_element{
      display: flex;
+    }
+    .container ul{
+        display: flex;
+        flex-direction: row;
+        padding-top: 0px;
+    }
+    header 
+    {
+        height: 40px;
+        
+    }
+    .container{
+        width: 60%;
+        /* margin: auto; */
+        display: flex;
+        justify-content: start;
     }
  }
