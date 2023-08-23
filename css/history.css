@@ -7,7 +7,7 @@ body{
 .navbar_parent
 {
     display: flex;
-    justify-content: space-around;
+    justify-content: start;
     align-items: center;
     background-color: white;
     color: #3f4f6e;
@@ -113,15 +113,19 @@ p{
   }
   .swiper-pagination-bullet
   {
-    background: red !important;
+    background: #000000 !important;
     opacity: 1 !important;
   }
   .swiper-pagination-bullet-active
   {
-    background: black !important;
+    background: #4f7fa7 !important;
   }
 @media screen and (min-width: 600px) {
     .navbar_left_element{
      display: flex;
+    }
+    .navbar_parent
+    {
+    justify-content: space-around;
     }
  }

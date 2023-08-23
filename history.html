@@ -15,7 +15,7 @@
             <div class="navbar_parent">
               <div class="navbar_left_element">
                 <div class="image">
-                  <img alt="logo" src="image/logo.png" width="25" height="25"/>
+                  <a href="index.html"><img alt="logo" src="image/logo.png" width="25" height="25"/></a>
                 </div>
 
                 <h4>LOSANGELES <span><br> MOUNTAINS</span></h4> 
@@ -51,12 +51,12 @@
     <div class="swiper mySwiper">
       <div class="swiper-wrapper">
         <div class="swiper-slide"><img src="./image/rohi.jpg"/></div>
+        <div class="swiper-slide"><img src="./image/ice.jpg"/></div>
+        <div class="swiper-slide"><img src="./image/icebird.jpg"/></div>
+        <div class="swiper-slide"><img src="./image/logo.png"/></div>
+        <div class="swiper-slide"><img src="./image/icebird.jpg"/></div>
         <div class="swiper-slide"><img src="./image/rohi.jpg"/></div>
-        <div class="swiper-slide"><img src="./image/rohi.jpg"/></div>
-        <div class="swiper-slide"><img src="./image/rohi.jpg"/></div>
-        <div class="swiper-slide"><img src="./image/rohi.jpg"/></div>
-        <div class="swiper-slide"><img src="./image/rohi.jpg"/></div>
-        <div class="swiper-slide"><img src="./image/rohi.jpg"/></div>
+        <div class="swiper-slide"><img src="./image/ice.jpg"/></div>
       </div>
       <div class="swiper-pagination"></div>
     </div> 
@@ -64,23 +64,23 @@
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
-    <!-- Initialize Swiper -->
-    <script>
-      let sliderPerViewCount = 3;
-      let width = window.innerWidth;
-
-      if(width <= 600)
-      {
-        sliderPerViewCount = 1;
-      }
+    <script>  
       var swiper = new Swiper(".mySwiper", {
-        slidesPerView: sliderPerViewCount ,
+        breakpoints: {
+            320: {
+              slidesPerView: 1,
+              spaceBetween: 20
+            },
+            480: {
+              slidesPerView: 3,
+              spaceBetween: 30
+            }},
         spaceBetween: 30,
         pagination: {
           el: ".swiper-pagination",
           clickable: true,
         },
-      });
+    });
     </script>
   </body>
 </html>

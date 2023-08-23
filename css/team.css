@@ -83,17 +83,18 @@ header a{
 }
 .navbar_parent{
     padding-bottom: 1px;
-    color: #747d98;
+    color: #060608;
     background-color: #404F6C;
 }
 .navbar_left_element h4{
     margin-top: 10px;
+    color: #060608;
 }
 .image{
     border: 1px #747d98 solid;
     background-color: #707992;
     padding-top: 10px;
-    opacity: 0.5;
+    opacity: 0.9;
     width: 40px;
     display: flex;
     margin-bottom: 8px;
