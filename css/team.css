@@ -1,0 +1,63 @@
+body{
+    background: url("../image/icebird.jpg");
+    background-size: cover; 
+     background-repeat: no-repeat; 
+     height: 100vh;
+     background-size: cover; 
+}
+section{
+    height: 120px;
+    background-color: white;
+}
+.history{
+    margin-top: 0px;
+}
+.container ul{
+    margin: 0px;
+}
+header{
+    height: 30px;
+    width: 100vw;
+    background-color:  rgb(50, 50, 71);
+}
+header a{
+    padding: 8px 0px;
+}
+.description{
+    width: 300px;
+    margin-top: 12px;
+    border: 1px white solid;
+    background-color:white;
+    opacity: 0.9;
+}
+.description h2{
+    color: rgb(50, 50, 71);
+    margin-bottom: 0px;
+    padding-left: 20px;
+}
+.content{
+    display: flex;
+    padding: 0px 20px;
+}
+.right-side-note{
+    padding-left: 20px;
+}
+#para1{
+    margin-top: 6px;
+    margin-bottom: 0px;
+}
+#para2{
+    margin-top: 0px;
+}
+.footer{
+    width: 100vw;
+   position: absolute;
+   bottom: 0px;
+   background-color:  rgb(27, 27, 50);
+}
+.footer .container{
+         width: 60%;
+        margin: auto;
+    
+    
+}
