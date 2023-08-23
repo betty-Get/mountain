@@ -8,6 +8,7 @@ body{
     height: 100vh;
     background-size: cover; 
      background-repeat: no-repeat; 
+     overflow: hidden;
 }
 /* global */
 .container{
@@ -50,7 +51,7 @@ header #logo{
     margin: 0px;
     float: left;
 }
-header nav{
+.nav{
     padding: 1px;
     float: center;
 }
@@ -62,14 +63,14 @@ header a:hover{
     font-size: 40px;
 }
 .sub-header{
-    color:rgb(50, 50, 71);
+    color:#323e54;
 }
 
 @media screen and (min-width: 600px) {
    .logo{
     display: flex;
    }
-   header nav{
+   .nav{
     float: right;
 }
 .main-header{

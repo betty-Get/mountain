@@ -3,47 +3,77 @@ body{
     background-size: cover; 
      background-repeat: no-repeat; 
 }
-.main-logo{
-    display:flex;
-    gap:10px;
-    width: 80px;
-    position: absolute;
-}
-.logo
-{
-    position: static;
-}
-header{
-    background-color: white;
-    width: 100vw;
-    height: 60px;
-    z-index: -40;
-}
-header a {
-    color: black;
-    text-decoration: none;
-    text-decoration-color: white;
-    padding-bottom: 5px;
 
+.navbar_parent
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    color: #3f4f6e;
+    height: 58px;
+}
+.navbar_parent h4{
+    color: rgb(120, 115, 115);
+}
+.navbar_parent a{
+    color: #3f4f6e;
+}
+.navbar_parent h4 span{
+    color: #3f4f6e;
+}
+.navbar_left_element
+{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    gap:5px;
+}
+.image{
+    border: 1px #f1f2f8 solid;
+    background-color: #e7eaf0;
+    padding-top: 10px;
+    opacity: 0.9;
+    width: 40px;
+    display: flex;
+    margin-bottom: 8px;
+    border-radius: 100%;
+     justify-content: center;
+    align-items: center;
+    padding-bottom: 7px;
 }
  .history{
     display: flex;
-    margin-top: 30px;
+    margin-top: 0px;
 }
 .numbering{
-    font-size: 130px;
+    font-size: 100px;
     font-weight: 600;
-    color:rgb(101, 101, 121);
+    color:#9FA6B6;
 }
 .title{
-    margin-top: 67px;
-    font-size: 30px;
+    margin-top: 45px;
+    font-size: 25px;
     font-weight: 200;
-    color:rgb(50, 50, 71);
+    color: #283b60;
 }
 .dot{
-    border: 1px rgb(101, 101, 121) solid;
+    border: 1px #9FA6B6 solid;
     padding: 8px;
-    width: 8px;
-    background-color: rgb(101, 101, 121);
+    width: 3px;
+    background-color:#9FA6B6;
 }
+header a {
+    color: blue;
+    text-decoration: none;
+    text-decoration-color: white;
+    padding-bottom: 5px;
+}
+p{
+    margin-top: 0px;
+}
+@media screen and (min-width: 600px) {
+    .navbar_left_element{
+     display: flex;
+    }
+ }
